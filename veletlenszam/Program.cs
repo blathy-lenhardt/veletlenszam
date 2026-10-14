@@ -58,6 +58,20 @@ namespace veletlenszam
 			{
 				Console.WriteLine("A két szám egyenlő");
 			}
+
+			// 2. feladat: Állítsunk elő véletlenszerűen egy egész számot az [1,10]-bóll, és írjuk ki, hogy a szám páros-e vagy páratlan!
+			int randomNum2 = rnd.Next(1, 11);
+			string str2;
+			Console.WriteLine("2. feladat");
+			if (randomNum2 % 2 == 0)
+			{
+				str2 = "páros";
+			}
+			else
+			{
+				str2 = "páratlan";
+			}
+			Console.WriteLine("A(z) {0} egy {1} szám.", randomNum2, str2);
 		}
 	}
 }

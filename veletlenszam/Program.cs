@@ -37,6 +37,27 @@ namespace veletlenszam
 			 * 0 és 100 között generáljon valós számokat, akkor szorozzuk meg 100-al:
 			 *	double veletlenszam = név.NextDouble()*100;
 			 */
+
+			// 1. feladat: Állítsunk elő véletlenszerűen két egész számot a [0,10] tartományból, és írjuk ki a számokat a képernyőre,
+			//	majd azt, hogy melyik szám a nagyobb! Ha egyenlő, írjuk ki "A két szám egyenlő" szöveget!
+			Random rnd = new Random();
+			int[] randomNums = { 0, 0 };
+			Console.WriteLine("1. feladat");
+			randomNums[0] = rnd.Next(0, 11);
+			randomNums[1] = rnd.Next(0, 11);
+			Console.WriteLine("num1 = {0}\nnum2 = {1}", randomNums[0], randomNums[1]);
+			if (randomNums[0] > randomNums[1])
+			{
+				Console.WriteLine("{0} > {1}", randomNums[0], randomNums[1]);
+			}
+			else if (randomNums[1] > randomNums[0])
+			{
+				Console.WriteLine("{0} > {1}", randomNums[1], randomNums[0]);
+			}
+			else
+			{
+				Console.WriteLine("A két szám egyenlő");
+			}
 		}
 	}
 }
